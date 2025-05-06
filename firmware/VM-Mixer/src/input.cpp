@@ -1,3 +1,4 @@
+#include "config.h"
 #include "input.h"
 #include "midi.h"
 #include "cli.h"

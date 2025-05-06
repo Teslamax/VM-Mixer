@@ -1,6 +1,5 @@
 #include <MIDI.h>
-MIDI_CREATE_INSTANCE(usbMIDI, MIDI);
-
+MIDI_CREATE_DEFAULT_INSTANCE();
 #include <Arduino.h>
 #include "midi.h"
 #include "cli.h"
