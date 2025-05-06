@@ -1,8 +1,8 @@
-#include <MIDI.h>
-MIDI_CREATE_DEFAULT_INSTANCE();
 #include <Arduino.h>
 #include "midi.h"
 #include "cli.h"
+#include <MIDI.h>
+MIDI_CREATE_DEFAULT_INSTANCE();
 
 void send_midi_cc(uint8_t cc_number, uint8_t value) {
   MIDI.sendControlChange(cc_number, value, 1);  // channel 1
