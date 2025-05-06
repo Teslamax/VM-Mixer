@@ -31,7 +31,6 @@
 #define ENC3_B 7  // D7
 #define ENC3_BTN 8  // D8
 
-
-// === Optional External Save/Load Button ===
-#define ENABLE_SAVELOAD_BUTTON   1   // Set to 0 to disable this feature
-#define PIN_SAVELOAD_BUTTON      9   // GPIO pin for external button
+// Save/Load Button
+#define SAVELOAD_BTN 9
+#define SAVELOAD_HOLD_MS 500
