@@ -34,3 +34,12 @@
 // Save/Load Button
 #define SAVELOAD_BTN 9
 #define SAVELOAD_HOLD_MS 500
+#define ECHO_USER_INITIAL true
+#define CDC_INFO_PREFIX "[INFO] "
+#define CDC_WARN_PREFIX "[WARN] "
+#define CDC_ERROR_PREFIX "[ERROR] "
+#define ECHO_USER_PREFIX "> "
+#define FIRMWARE_NAME "VM-Mixer"
+#define FIRMWARE_VERSION "0.1.0"
+#define FIRMWARE_DESCRIPTION "USB MIDI/CDC Mixer Control"
+#define FIRMWARE_BOOT_MSG "VM-Mixer ready. Type /help for commands."

@@ -27,12 +27,12 @@ unsigned long saveloadPressTime = 0;
 bool saveloadPressed = false;
 
 void sendVolume(uint8_t ch) {
-  sendControlChange(ccVolume[ch], volumeLevel[ch]);
+  MIDI.sendControlChange(ccVolume[ch], volumeLevel[ch]);
   logInfo("🎚️ CH%d Volume: %d\n", ch + 1, volumeLevel[ch]);
 }
 
 void sendMute(uint8_t ch) {
-  sendControlChange(ccMute[ch], muteState[ch] ? 127 : 0);
+  MIDI.sendControlChange(ccMute[ch], muteState[ch] ? 127 : 0);
   logInfo("🔇 CH%d Mute %s\n", ch + 1, muteState[ch] ? "ON" : "OFF");
 }
 
