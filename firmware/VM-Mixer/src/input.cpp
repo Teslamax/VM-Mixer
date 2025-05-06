@@ -1,3 +1,5 @@
+#include <MIDI.h>
+extern MIDI_NAMESPACE::MidiInterface<MIDI_NAMESPACE::SerialMIDI<HardwareSerial>> MIDI;
 #include "config.h"
 #include "input.h"
 #include "midi.h"
