@@ -53,3 +53,8 @@
 #define CDC_ERROR_PREFIX   "❌ "    // errors
 #define CDC_VERBOSE_PREFIX "🔍 "   // verbose/debug
 
+// more stuff
+#define LED_PIN 13
+#define LED_BLINK_ENABLED true
+
+
