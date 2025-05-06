@@ -1,3 +1,4 @@
+#include <MIDI.h>
 #pragma once
 
 // Send a MIDI Control Change (CC) message
