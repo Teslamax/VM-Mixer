@@ -34,6 +34,8 @@
 // Save/Load Button
 #define SAVELOAD_BTN 9
 #define SAVELOAD_HOLD_MS 500
+
+// CLI defines
 #define ECHO_USER_INITIAL true
 #define CDC_INFO_PREFIX "[INFO] "
 #define CDC_WARN_PREFIX "[WARN] "
