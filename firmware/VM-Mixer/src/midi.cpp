@@ -35,3 +35,7 @@ void poll_midi_feedback() {
     }
   }
 }
+
+void setup_midi() {
+  MIDI.begin(MIDI_CHANNEL_OMNI);
+}
