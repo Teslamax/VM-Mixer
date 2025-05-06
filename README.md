@@ -8,8 +8,8 @@ This controller enables precise volume (gain) control and mute toggling for up t
 
 ## 🔧 Hardware
 
-- [Seeed XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)
 - [ANAVI Knobs 3](https://www.anavi.technology/anavi-knobs/)
+  - [Seeed XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)
   - 3x Rotary encoders (w/ push-buttons)
 - Optional:
   - OLED display via I²C (SSD1306, 128x32 or 128x64)

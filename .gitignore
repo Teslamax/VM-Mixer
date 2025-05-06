@@ -1,0 +1,52 @@
+/*.zip
+
+# macOS & Windows system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE backup or swap files
+*.bak
+*.tmp
+*.log
+*.swp
+
+# PlatformIO and build artifacts
+.pio/
+.vscode/
+*.elf
+*.bin
+*.hex
+*.map
+*.d
+
+# Arduino/Sketch intermediate files
+*.ino.*
+*.cpp.*
+*.o
+
+# Archives and disk images
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.img
+*.iso
+
+# CAD/design tool backups and caches
+*.autosave
+*.backup
+*.bak
+*.sch-bak
+*.pcb-bak
+
+# Python or scripting caches
+__pycache__/
+
+# Version control conflict leftovers
+*.orig
+*.rej
+*~
+
+# allow backup firmware storage
+!recovery_firmware/board_recovery/*.bin
+!recovery_firmware/board_recovery/*.uf2
