@@ -5,7 +5,7 @@
 
 #include "src/cli.h"
 #include "src/midi.h"
-#include "src/input.h"  // Placeholder for future input logic
+#include "src/input.h"
 
 void setup() {
   Serial.begin(115200);
