@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include "MIDIUSB.h"
 #include "midi_manager.h"
-#include "cli_parser.h"
+#include "cli.h"
 
 void send_midi_cc(uint8_t cc_number, uint8_t value) {
   midiEventPacket_t event = {0x0B, 0xB0, cc_number, value};
