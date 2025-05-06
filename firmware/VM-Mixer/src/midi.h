@@ -9,3 +9,5 @@ void send_midi_note(uint8_t note_number, bool on);
 
 // Handle MIDI IN messages from host
 void poll_midi_feedback();
+
+void setup_midi();
