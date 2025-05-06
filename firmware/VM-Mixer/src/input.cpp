@@ -1,10 +1,10 @@
+#include <Arduino.h>
 #include <MIDI.h>
-extern MIDI_NAMESPACE::MidiInterface<MIDI_NAMESPACE::SerialMIDI<HardwareSerial>> MIDI;
+extern MIDI_NAMESPACE::MidiInterface<MIDI_NAMESPACE::UsbMIDI> MIDI;
 #include "config.h"
 #include "input.h"
 #include "midi.h"
 #include "cli.h"
-#include <Arduino.h>
 
 // --- Configuration ---
 const int NUM_CHANNELS = 3;
