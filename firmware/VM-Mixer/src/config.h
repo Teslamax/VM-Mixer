@@ -45,7 +45,7 @@
 // User‑echo compile‑time defaults
 #define ECHO_USER_INITIAL  true
 #define ECHO_USER_PREFIX   "➡️ "
-#define PI_ECHO_PREFIX     "🐧 "
+//#define PI_ECHO_PREFIX     "🐧 "
 
 // ————— CDC Log‑Level Prefixes —————
 #define CDC_INFO_PREFIX    "ℹ️  "   // informational
