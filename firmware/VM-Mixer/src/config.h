@@ -30,3 +30,7 @@
 #define ENC3_A 6  // D6
 #define ENC3_B 7  // D7
 #define ENC3_BTN 8  // D8
+
+// Save/Load Button
+#define SAVELOAD_BTN 9
+#define SAVELOAD_HOLD_MS 500

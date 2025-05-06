@@ -22,6 +22,8 @@ bool muteState[NUM_CHANNELS] = {false, false, false};
 volatile int lastEncoderState[NUM_CHANNELS] = {0, 0, 0};
 unsigned long buttonPressTime[NUM_CHANNELS] = {0, 0, 0};
 bool buttonPressed[NUM_CHANNELS] = {false, false, false};
+unsigned long saveloadPressTime = 0;
+bool saveloadPressed = false;
 
 void sendVolume(uint8_t ch) {
   sendControlChange(ccVolume[ch], volumeLevel[ch]);
@@ -58,6 +60,28 @@ void update_inputs() {
         volumeLevel[i] = min(127, volumeLevel[i] + 1);
         sendVolume(i);
       } else {
+
+
+  // --- Save/Load Button Logic ---
+  bool btnDown = (digitalRead(SAVELOAD_BTN) == LOW);
+
+  if (btnDown && !saveloadPressed) {
+    saveloadPressed = true;
+    saveloadPressTime = millis();
+  }
+
+  if (!btnDown && saveloadPressed) {
+    unsigned long dur = millis() - saveloadPressTime;
+    saveloadPressed = false;
+
+    if (dur >= SAVELOAD_HOLD_MS) {
+      logInfo("💾 Saved current state\n");
+      // TODO: save_state();
+    } else {
+      logInfo("📥 Loaded saved state\n");
+      // TODO: load_state();
+    }
+  }
         // Counter-clockwise
         volumeLevel[i] = max(0, volumeLevel[i] - 1);
         sendVolume(i);
