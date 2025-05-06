@@ -29,7 +29,8 @@ unsigned long saveloadPressTime = 0;
 bool saveloadPressed = false;
 
 void sendVolume(uint8_t ch) {
-  MIDI.sendControlChange(ccVolume[ch], volumeLevel[ch]);
+  MIDI.sendControlChange(ccVolume[ch], volumeLevel[ch], 1);
+  MIDI.sendControlChange(ccMute[ch], muteState[ch] ? 127 : 0, 1);
   logInfo("🎚️ CH%d Volume: %d\n", ch + 1, volumeLevel[ch]);
 }
 
