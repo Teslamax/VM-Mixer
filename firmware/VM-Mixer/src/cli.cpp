@@ -1,4 +1,13 @@
 // cli_parser.cpp - Handles serial CLI commands (e.g. /i2cscan, /help, /input, /inputmonitor)
+
+int cdcLogLevel = 2; // 2 = info, 1 = warning, 0 = error
+//And add a stub for `print_inputs()` until you implement it:**
+//cpp
+void print_inputs() {
+  Serial.println(F("📝 Input state printing not implemented yet."));
+}
+
+
 #include <Arduino.h>
 #include <Wire.h>
 #include "cli.h"
