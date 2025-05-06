@@ -1,9 +1,9 @@
 // cli_parser.cpp - Handles serial CLI commands (e.g. /i2cscan, /help, /input, /inputmonitor)
 #include <Arduino.h>
 #include <Wire.h>
-#include "cli_parser.h"
+#include "cli.h"
 #include "config.h"
-#include "input_manager.h"
+#include "input.h"
 
 static String input_buffer;
 static bool at_line_start = true;
