@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <MIDI.h>
-extern MIDI_NAMESPACE::MidiInterface<MIDI_NAMESPACE::UsbMIDI> MIDI;
+extern midi::MidiInterface<midi::DefaultSerialMIDI> MIDI;  // actually declared via MIDI_CREATE_DEFAULT_INSTANCE()
 #include "config.h"
 #include "input.h"
 #include "midi.h"
