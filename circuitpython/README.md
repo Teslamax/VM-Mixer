@@ -116,7 +116,7 @@ You can download the `lib/` bundle from [Adafruit CircuitPython Library Bundle](
 Built using:
 - [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
 - [Adafruit CircuitPython](https://circuitpython.org/)
-- [ANAVI Knobs 3](https://www.crowdsupply.com/anavi-technology/knobs-3)
+- [ANAVI Knobs 3](https://www.crowdsupply.com/anavi-technology/anavi-macro-pad-10)
 
 ---
 
