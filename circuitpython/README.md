@@ -16,25 +16,7 @@ A USB MIDI + CDC mixer controller built on the **ANAVI Knobs 3** with a **Seeed 
 
 ---
 
-## 🧩 Pin Assignments (KMK)
-
-| Encoder | Signal     | XIAO Pin | KMK `board.Dx` |
-|---------|------------|----------|----------------|
-| 1       | A          | D1       | `board.D1`     |
-| 1       | B          | D2       | `board.D2`     |
-| 1       | Button     | D0       | `board.D0`     |
-| 2       | A          | D10      | `board.D10`    |
-| 2       | B          | D9       | `board.D9`     |
-| 2       | Button     | D3       | `board.D3`     |
-| 3       | A          | D8       | `board.D8`     |
-| 3       | B          | D7       | `board.D7`     |
-| 3       | Button     | D6       | `board.D6`     |
-
-I2C OLED is connected via `SDA` (D4) and `SCL` (D5).
-
----
-
-### 🔌 GPIO Pin Usage (Seeed XIAO RP2040)
+## 🔌 GPIO Pin Usage (Seeed XIAO RP2040)
 
 | Function           | GPIO Pin | KMK / CircuitPython Name                | Notes                                 |
 | ------------------ | -------- | --------------------------------------- | ------------------------------------- |
