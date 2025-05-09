@@ -1,6 +1,6 @@
 # 🛡️ CircuitPython Boot Modes & Drive Protection
 
-This file documents how to safely configure the `boot.py` script on a CircuitPython-compatible board (such as the Seeed XIAO RP2040) to **control access to the CIRCUITPY USB mass storage drive**. This is useful for:
+This file documents how to safely configure the `boot.py` script on a CircuitPython-compatible board (such as the Seeed XIAO RP2040) to **control access to the `CIRCUITPY` USB mass storage drive**. This is useful for:
 
 - Preventing accidental deletion/modification
 - Reducing filesystem corruption risk
@@ -10,7 +10,7 @@ This file documents how to safely configure the `boot.py` script on a CircuitPyt
 
 ## 🔧 Option 1: Disable USB Drive (Mass Storage)
 
-This prevents CIRCUITPY from showing up as a USB drive.
+This prevents `CIRCUITPY` from showing up as a USB drive.
 
 ```python
 # boot.py
@@ -19,13 +19,13 @@ import storage
 storage.disable_usb_drive()
 ```
 
-CIRCUITPY will still run code.py, and USB CDC/MIDI/HID features will work.
+`CIRCUITPY` will still run `code.py`, and USB CDC/MIDI/HID features will work.
 
 ⸻
 
 🧰 Option 2: Conditional Drive Mount (e.g., with Button Press)
 
-You can make CIRCUITPY mount only when a physical button is pressed during boot.
+You can make `CIRCUITPY` mount only when a physical button is pressed during boot.
 
 ```python
 # boot.py
@@ -43,15 +43,15 @@ else:
     storage.disable_usb_drive()  # Disable otherwise
 ```
 
-Replace board.D0 with any usable GPIO pin tied to a button or jumper.
+Replace `board.D0` with any usable GPIO pin tied to a button or jumper.
 
 ⸻
 
-♻️ Re-Enabling CIRCUITPY Access
+♻️ Re-Enabling `CIRCUITPY` Access
 
 To remount the USB drive:
 	•	Double-press the reset button to enter UF2 Bootloader mode
-	•	Update or comment out boot.py
+	•	Update or comment out `boot.py`
 	•	Or reboot the board while holding the designated button (if using Option 2)
 
 ⸻
