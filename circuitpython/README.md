@@ -105,6 +105,40 @@ You can download the `lib/` bundle from [Adafruit CircuitPython Library Bundle](
 
 ---
 
+## 🛠️ TODO: Custom USB Device Name for VM-Mixer
+
+### Goal:
+Ensure **VM-Mixer** appears as a properly named USB MIDI & CDC device in Windows, Voicemeeter, and other apps.
+
+### Why:
+- CircuitPython 9.x allows HID device naming via `usb_hid.enable()`
+- **MIDI & CDC still inherit from composite device descriptor**
+- Requires firmware rebuild to override system-wide USB device name
+
+### Action Steps:
+- [ ] Install CircuitPython build toolchain (arm-none-eabi-gcc, cmake, python)
+- [ ] Clone CircuitPython repo: `git clone https://github.com/adafruit/circuitpython`
+- [ ] Update submodules: `git submodule update --init --recursive`
+- [ ] Edit: `ports/raspberrypi/usb_descriptors.c`
+  - Change:
+    ```c
+    #define USB_PRODUCT "VM-Mixer"
+    #define USB_MANUFACTURER "CyberNyan"
+    ```
+- [ ] Build for Seeed XIAO RP2040:
+    ```bash
+    make -C ports/raspberrypi BOARD=seeed_xiao_rp2040
+    ```
+- [ ] Flash resulting `firmware.uf2` to the device
+- [ ] Verify name in Voicemeeter & MIDI apps
+
+### Notes:
+- This affects all interfaces (MIDI, CDC, HID)
+- One-time build; firmware updates will revert without this patch
+- Consider making a reusable `.patch` file for ease of maintenance
+
+---
+
 ## 📸 Photos / Diagrams
 
 *(Add photos of your physical build or pin diagram here)*
