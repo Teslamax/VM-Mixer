@@ -1,0 +1,2 @@
+SOURCE_NAME = "haruna_local"
+VOICE_MEETER_STRIP = 1

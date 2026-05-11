@@ -1,0 +1,9 @@
+controls:
+  knob1:
+    source: tovan_tv
+
+  knob2:
+    source: haruna_local
+
+  knob3:
+    source: zuban_iona

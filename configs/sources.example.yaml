@@ -1,0 +1,13 @@
+sources:
+  tovan_tv:
+    strip: 0
+    restart_host: tovan
+    restart_service: vban_emitter
+
+  haruna_local:
+    strip: 1
+
+  zuban_iona:
+    strip: 2
+    restart_host: zuban
+    restart_service: vban_emitter

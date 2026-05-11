@@ -1,0 +1,1 @@
+"""CDC serial transport scaffold."""

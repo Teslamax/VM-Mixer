@@ -1,0 +1,3 @@
+pyserial
+voicemeeter-api
+pyyaml

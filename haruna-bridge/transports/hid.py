@@ -1,0 +1,1 @@
+"""Future HID transport scaffold."""
