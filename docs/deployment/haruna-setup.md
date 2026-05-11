@@ -1,16 +1,18 @@
-# Haruna Setup
+# 🛠️ Haruna Setup
 
-## Planned Components
+## 📦 Planned Components
 
-- Python 3
-- VoiceMeeter
-- pyserial
-- voicemeeter-api
-- SSH client
+- **Python 3**
+- **VoiceMeeter**
+- **pyserial**
+- **voicemeeter-api**
+- **SSH client**
 
-## Responsibilities
+---
 
-- VoiceMeeter API control
-- SSH orchestration
-- source mapping
-- event routing
+## 🎚️ Responsibilities
+
+- **VoiceMeeter API control**
+- **SSH orchestration**
+- **Source mapping**
+- **Event routing**

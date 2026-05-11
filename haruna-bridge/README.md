@@ -1,19 +1,24 @@
-# Haruna Bridge
+# 🌉 Haruna Bridge
 
-Central orchestration service for:
-- VoiceMeeter API control
-- SSH orchestration
-- source mapping
-- semantic event routing
+**Haruna Bridge** is the central orchestration service for:
 
-## Planned Inputs
+- **VoiceMeeter API control**
+- **SSH orchestration**
+- **Source mapping**
+- **Semantic event routing**
 
-- CDC serial
-- HID
-- optional MQTT/OSC/WebSocket
+---
 
-## Planned Outputs
+## 🔌 Planned Inputs
 
-- VoiceMeeter API calls
-- SSH commands
-- status/telemetry
+- **CDC serial**
+- **HID**
+- **Optional MQTT/OSC/WebSocket**
+
+---
+
+## 📤 Planned Outputs
+
+- **VoiceMeeter API calls**
+- **SSH commands**
+- **Status/telemetry**

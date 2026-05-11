@@ -1,27 +1,33 @@
-# VM-Mixer Architecture
+# 🏗️ VM-Mixer Architecture
 
-## Philosophy
+## 🎚️ Philosophy
 
 Physical controls are separated from mixer logic.
 
 The Haruna bridge acts as:
-- VoiceMeeter authority
-- SSH orchestrator
-- source mapper
-- semantic event processor
 
-## Audio Paths
+- **VoiceMeeter authority**
+- **SSH orchestrator**
+- **Source mapper**
+- **Semantic event processor**
 
-- Fire Cube / TV -> tovan -> VBAN -> Haruna
-- Iona USB audio -> zuban -> VBAN -> Haruna
+---
+
+## 🔊 Audio Paths
+
+- Fire Cube / TV → `tovan` → VBAN → `Haruna`
+- Iona USB audio → `zuban` → VBAN → `Haruna`
 - Haruna local virtual audio
 
-## Control Paths
+---
+
+## 🎹 Control Paths
 
 Control devices emit semantic events:
-- rotate
-- press
-- double_press
-- hold
+
+- `rotate`
+- `press`
+- `double_press`
+- `hold`
 
 These are interpreted by the Haruna bridge.

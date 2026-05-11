@@ -1,20 +1,25 @@
-# SinLoon Macropad
+# ⌨️ SinLoon Macropad
 
-## Hardware
+## 🔧 Hardware
 
-- CH552G MCU
-- 3 keys
-- rotary encoder
-- composite HID interfaces
+- **CH552G MCU**
+- **3 keys**
+- **Rotary encoder**
+- **Composite HID interfaces**
 
-## Intended Uses
+---
 
-- restart vban_emitter
-- restart WookieBot
-- quick VoiceMeeter control
+## 🎹 Intended Uses
 
-## Linux Notes
+- Restart `vban_emitter`
+- Restart `WookieBot`
+- Quick VoiceMeeter control
+
+---
+
+## 🐧 Linux Notes
 
 Observed interfaces:
-- event1: encoder/media
-- event2: keypad
+
+- `event1`: encoder/media
+- `event2`: keypad
